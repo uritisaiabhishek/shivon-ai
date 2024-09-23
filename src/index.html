@@ -8,34 +8,33 @@
     <!-- Include the header from header.html -->
     @@include('includes/headScripts.html')
 
-    <style>
-
-    .icon {
-      width: 64px;
-      height: 64px;
-      margin-bottom: 1rem;
-    }
-    </style>
-    
+   
 </head>
-<body>
+<body class="bg-dark">
 
     <!-- Include the header from header.html -->
     @@include('includes/header.html')
    
   <!-- Hero Section -->
-  <section class="hero bg-light py-5 text-center">
+  <section class="hero py-5 text-light">
     <div class="container">
-      <h1 class="display-4 fw-bold mb-4">Shivon AI - Revolutionizing Recruitment</h1>
-      <p class="lead mb-5">AI-powered candidate sourcing and search for recruiters. Simplify your hiring process with our automated solutions.</p>
-      <a href="#features" class="btn btn-primary btn-lg">Learn More</a>
+      <div class="row align-items-center">
+        <div class="col">
+          <h1 class="display-4 fw-bold mb-4"><span>Shivon AI</span> - Revolutionizing Recruitment</h1>
+          <p class="lead mb-5">AI-powered candidate sourcing and search for recruiters. Simplify your hiring process with our automated solutions.</p>
+          <a href="#features" class="btn btn-primary-outline text-primary border-primary">Learn More</a>
+        </div>
+        <div class="col">
+          <img src="https://via.placeholder.com/450x340" alt="Shivon AI" class="img-fluid rounded-4">
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- Features Section -->
   <section id="features" class="feature py-5">
     <div class="container">
-      <h2 class="text-center mb-5">Why Choose Shivon AI?</h2>
+      <h2 class="text-center mb-5 text-light">Why Choose Shivon AI?</h2>
       <div class="row">
         <!-- AI-Powered Search Icon -->
         <div class="col-md-4 text-center">
@@ -70,9 +69,9 @@
   </section>
 
   <!-- Benefits Section -->
-  <section class="benefits bg-light py-5">
+  <section class="benefits py-5">
     <div class="container">
-      <h2 class="text-center mb-5">How Shivon AI Makes a Difference</h2>
+      <h2 class="text-center mb-5 text-light">How Shivon AI Makes a Difference</h2>
       <div class="row">
         <div class="col-md-6 mb-4">
           <h4 class="fw-bold">Faster Hiring Process</h4>
@@ -86,14 +85,8 @@
     </div>
   </section>
 
-  <!-- Call to Action Section -->
-  <section class="cta bg-primary text-white text-center py-5">
-    <div class="container">
-      <h2 class="mb-4">Ready to Revolutionize Your Recruitment Process?</h2>
-      <a href="/contact" class="btn btn-light btn-lg fw-bold">Get Started Today</a>
-    </div>
-  </section>
-
+  
+    @@include('includes/website-cta.html')
 
     <!-- Include the header from header.html -->
     @@include('includes/footer.html')
