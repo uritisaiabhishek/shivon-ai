@@ -1,20 +1,22 @@
 $dark : #1c2836;
 $primary : #f7961c;
 $white: #fff;
+$grey: #9bacc4;
 
-.hero .col:has(img)::after {
-    content: "";
-    position: absolute;
-    top: -40px;
-    right: 0;
-    width: 672px;
-    height: 672px;
-    background-color: rgba(247, 150, 28, .4);
-    border-radius: 50%;
-    -webkit-filter: blur(100px);
-    filter: blur(100px);
-    pointer-events: none;
-    z-index: -1;
+.card{
+    .card-body{}
+    &.card-outline{
+        background: transparent;
+        border: 2px solid rgba($primary, 0.15);
+        .card-body{
+            h4{
+                color: rgba($primary, 0.85);
+            }
+            p{
+                color: $grey;
+            }
+        }
+    }
 }
 
 @import '../../../node_modules/swiper/swiper-bundle.min.css';

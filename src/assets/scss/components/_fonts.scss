@@ -132,7 +132,7 @@ h2, h3{
     position: absolute;
     top: 100%;
     right: 0%;
-    width: 50%;
+    width: 35%;
     height: 5px;
     border-radius: 10px;
     background-color: $primary;
@@ -168,4 +168,21 @@ p{
     font-family: "Playwrite DE Grund", cursive;
 }
 
+.text-grey{
+  color: $grey;
+}
 
+.icon{
+  width: 65px;
+  height: 65px;
+  background-color: rgba($primary, .1);
+  font-size: 30px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  i{
+    font-size: 30px;
+    color: $primary;
+  }
+}

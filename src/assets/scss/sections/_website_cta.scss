@@ -1,0 +1,7 @@
+@use '../custom' as *;
+
+.cta{
+    .cta-card{
+        background: rgba($primary, 0.15);
+    }
+}

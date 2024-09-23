@@ -1,3 +1,5 @@
+@use '../custom' as *;
+
 .hero {
     img{
         max-height: 400px;
@@ -5,4 +7,22 @@
         object-fit: cover;
         object-position: top;
     }
+
+    
+    .col:has(img)::after {
+        content: "";
+        position: absolute;
+        top: -40px;
+        right: 0;
+        width: 672px;
+        height: 672px;
+        background-color: rgba($primary, 0.4);
+
+        border-radius: 50%;
+        -webkit-filter: blur(100px);
+        filter: blur(100px);
+        pointer-events: none;
+        z-index: -1;
+    }
+
 }
