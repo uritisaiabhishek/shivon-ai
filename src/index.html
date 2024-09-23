@@ -3,23 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shivon AI</title>
+    <title>Shivon AI - AI-Powered Candidate Search</title>
     
     <!-- Include the header from header.html -->
     @@include('includes/headScripts.html')
 
+    <style>
+
+    .icon {
+      width: 64px;
+      height: 64px;
+      margin-bottom: 1rem;
+    }
+    </style>
     
 </head>
 <body>
 
     <!-- Include the header from header.html -->
     @@include('includes/header.html')
-    
+   
+  <!-- Hero Section -->
+  <section class="hero bg-light py-5 text-center">
+    <div class="container">
+      <h1 class="display-4 fw-bold mb-4">Shivon AI - Revolutionizing Recruitment</h1>
+      <p class="lead mb-5">AI-powered candidate sourcing and search for recruiters. Simplify your hiring process with our automated solutions.</p>
+      <a href="#features" class="btn btn-primary btn-lg">Learn More</a>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="feature py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Why Choose Shivon AI?</h2>
+      <div class="row">
+        <!-- AI-Powered Search Icon -->
+        <div class="col-md-4 text-center">
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M32 2a30 30 0 1020.47 8.47L62 18.94 57.06 24l-9.06-9.06A30 30 0 1032 2z"/>
+            <circle cx="32" cy="32" r="6"/>
+          </svg>
+          <h4 class="fw-bold mb-3">AI-Powered Search</h4>
+          <p>Leverage advanced AI algorithms to source the best candidates quickly and efficiently.</p>
+        </div>
+        <!-- Automated Sourcing Icon -->
+        <div class="col-md-4 text-center">
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M32 2v60M62 32H2"/>
+            <circle cx="32" cy="32" r="10"/>
+            <path d="M48 32a16 16 0 11-16-16"/>
+          </svg>
+          <h4 class="fw-bold mb-3">Automated Sourcing</h4>
+          <p>Automate candidate sourcing, freeing up valuable time for recruiters.</p>
+        </div>
+        <!-- Data-Driven Insights Icon -->
+        <div class="col-md-4 text-center">
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M32 2C18.19 2 7 13.19 7 27c0 7.12 4.37 13.29 10.78 16.22L17 61l11-6.6c1.3.2 2.63.34 4 .34 13.81 0 25-11.19 25-25S45.81 2 32 2z"/>
+            <circle cx="32" cy="27" r="6"/>
+          </svg>
+          <h4 class="fw-bold mb-3">Data-Driven Insights</h4>
+          <p>Get insights from data-driven reports, helping you make informed hiring decisions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section class="benefits bg-light py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">How Shivon AI Makes a Difference</h2>
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <h4 class="fw-bold">Faster Hiring Process</h4>
+          <p>Our AI tools speed up the hiring process by automatically sourcing and screening candidates, reducing time to hire.</p>
+        </div>
+        <div class="col-md-6">
+          <h4 class="fw-bold">Better Candidate Matches</h4>
+          <p>With AI-driven search, recruiters get more accurate candidate matches, ensuring you hire the best talent for your company.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action Section -->
+  <section class="cta bg-primary text-white text-center py-5">
+    <div class="container">
+      <h2 class="mb-4">Ready to Revolutionize Your Recruitment Process?</h2>
+      <a href="/contact" class="btn btn-light btn-lg fw-bold">Get Started Today</a>
+    </div>
+  </section>
+
 
     <!-- Include the header from header.html -->
     @@include('includes/footer.html')
 
-
-    <script src="assets/js/main.min.js"></script>
+    @@include('includes/footScripts.html')
 </body>
 </html>
