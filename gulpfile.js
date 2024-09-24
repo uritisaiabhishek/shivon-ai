@@ -26,17 +26,10 @@ function cleanBuild() {
         .pipe(clean());
 }
 
-// Copy FontAwesome fonts to build folder
-function copyFonts() {
-    return gulp.src('./node_modules/@fortawesome/fontawesome-free/webfonts/*')
-        .pipe(gulp.dest(`${paths.dist}assets/webfonts`));
-}
-
 // Compile SCSS to CSS
 function styles() {
     return gulp.src([
-            paths.scss, 
-            './node_modules/@fortawesome/fontawesome-free/css/all.css'
+            paths.scss
         ])
         .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
@@ -103,7 +96,7 @@ exports.images = images;
 exports.serve = serve;
 
 // Default task
-exports.default = gulp.series(gulp.parallel(styles, scripts, html, images, copyFonts), serve);
+exports.default = gulp.series(gulp.parallel(styles, scripts, html, images), serve);
 
 // Build task
-exports.build = gulp.series(gulp.parallel(styles, scripts, html, images, copyFonts));
+exports.build = gulp.series(gulp.parallel(styles, scripts, html, images));
