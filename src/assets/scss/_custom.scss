@@ -1,4 +1,6 @@
 $dark : #1c2836;
+$footer-bg: #161f29;
+$footer-bg-dark: #0e161f;
 $primary : #f7961c;
 $white: #fff;
 $grey: #9bacc4;
@@ -20,21 +22,17 @@ $grey: #9bacc4;
 }
 
 body {
-    // Customize scrollbar 
-    // Track color red 
-    // Scroller color blue
     &::-webkit-scrollbar {
-        width: 12px;
+        width: 6px;
     }
     
     &::-webkit-scrollbar-track {
-        background: red;  // Track color
+        background: transparent;  // Track color
     }
     
     &::-webkit-scrollbar-thumb {
-        background-color: blue;  // Scroller color
+        background-color: $primary;  // Scroller color
         border-radius: 10px;
-        border: 3px solid $white;  // Add border if needed to contrast the scroller
     }
 }
 
