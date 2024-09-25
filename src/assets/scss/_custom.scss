@@ -3,19 +3,38 @@ $primary : #f7961c;
 $white: #fff;
 $grey: #9bacc4;
 
-.card{
-    .card-body{}
-    &.card-outline{
+.card {
+    .card-body {}
+    &.card-outline {
         background: transparent;
         border: 2px solid rgba($primary, 0.15);
-        .card-body{
-            h4{
+        .card-body {
+            h4 {
                 color: rgba($primary, 0.85);
             }
-            p{
+            p {
                 color: $grey;
             }
         }
+    }
+}
+
+body {
+    // Customize scrollbar 
+    // Track color red 
+    // Scroller color blue
+    &::-webkit-scrollbar {
+        width: 12px;
+    }
+    
+    &::-webkit-scrollbar-track {
+        background: red;  // Track color
+    }
+    
+    &::-webkit-scrollbar-thumb {
+        background-color: blue;  // Scroller color
+        border-radius: 10px;
+        border: 3px solid $white;  // Add border if needed to contrast the scroller
     }
 }
 
