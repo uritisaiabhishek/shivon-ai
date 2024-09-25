@@ -1,0 +1,8 @@
+@use '../custom' as *;
+
+footer{
+    background-color: $footer-bg;    
+    .copyright{
+        background-color: $footer-bg-dark;    
+    }
+}

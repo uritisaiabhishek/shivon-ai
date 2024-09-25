@@ -1,0 +1,7 @@
+
+// Font mixins for easier reuse
+@mixin font-family($font, $weight, $style: normal) {
+    font-family: $font, system-ui;
+    font-weight: $weight;
+    font-style: $style;
+}

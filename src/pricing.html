@@ -18,7 +18,7 @@
     </style>
     
 </head>
-<body class="bg-dark">
+<body class="bg-dark text-light">
 
 
     <!-- Include the header from header.html -->
@@ -26,7 +26,7 @@
 
 
   <!-- Pricing Header -->
-  <section class="pricing-header text-center bg-light py-5">
+  <section class="pricing-header text-center py-5">
     <div class="container">
       <h1 class="display-4 fw-bold">Choose Your Plan</h1>
       <p class="lead">Flexible pricing tailored to your recruitment needs.</p>
@@ -40,50 +40,56 @@
         <!-- Basic Plan -->
         <div class="col-md-4 mb-4">
           <div class="card h-100 shadow-sm">
-            <div class="card-body">
-              <h5 class="text-center card-title fw-bold">Basic</h5>
+            <div class="card-body px-5">
+              <h5 class="text-center card-title fw-bold mb-2">Basic</h5>
               <p class="text-center price mb-3">$99 <span class="price-period">/ month</span></p>
               <p class="text-center card-text">Perfect for small businesses or individual recruiters.</p>
-              <ul class="list-unstyled mb-4">
+              <ul class="list-unstyled mb-2">
                 <li>✔ 100 AI-Driven Searches</li>
                 <li>✔ Automated Candidate Sourcing</li>
                 <li>✔ Basic Reports & Insights</li>
               </ul>
-              <a href="#" class="btn btn-primary btn-lg">Get Started</a>
+            </div>
+            <div class="card-footer text-center">
+              <a href="#" class="btn btn-primary-outline text-primary border-primary">Get Started</a>
             </div>
           </div>
         </div>
         <!-- Pro Plan -->
         <div class="col-md-4 mb-4">
           <div class="card h-100 shadow-sm">
-            <div class="card-body">
-              <h5 class="text-center card-title fw-bold">Pro</h5>
+            <div class="card-body px-5">
+              <h5 class="text-center card-title fw-bold mb-2">Pro</h5>
               <p class="text-center price mb-3">$199 <span class="price-period">/ month</span></p>
               <p class="text-center card-text">Ideal for growing businesses with higher hiring demands.</p>
-              <ul class="list-unstyled mb-4">
+              <ul class="list-unstyled mb-2">
                 <li>✔ 500 AI-Driven Searches</li>
                 <li>✔ Advanced Candidate Matching</li>
                 <li>✔ Enhanced Data Reports</li>
                 <li>✔ Priority Support</li>
               </ul>
-              <a href="#" class="btn btn-primary btn-lg">Get Started</a>
+            </div>
+            <div class="card-footer text-center">
+              <a href="#" class="btn btn-primary-outline text-primary border-primary">Get Started</a>
             </div>
           </div>
         </div>
         <!-- Enterprise Plan -->
         <div class="col-md-4 mb-4">
           <div class="card h-100 shadow-sm">
-            <div class="card-body">
-              <h5 class="text-center card-title fw-bold">Enterprise</h5>
+            <div class="card-body px-5">
+              <h5 class="text-center card-title fw-bold mb-2">Enterprise</h5>
               <p class="text-center price mb-3">$499 <span class="price-period">/ month</span></p>
               <p class="text-center card-text">Designed for enterprises with large-scale hiring needs.</p>
-              <ul class="list-unstyled mb-4">
+              <ul class="list-unstyled mb-2">
                 <li>✔ Unlimited AI-Driven Searches</li>
                 <li>✔ Custom Sourcing & Matching</li>
                 <li>✔ Comprehensive Insights & Analytics</li>
                 <li>✔ Dedicated Account Manager</li>
               </ul>
-              <a href="#" class="btn btn-primary btn-lg">Get Started</a>
+            </div>
+            <div class="card-footer text-center">
+              <a href="#" class="btn btn-primary-outline text-primary border-primary">Get Started</a>
             </div>
           </div>
         </div>
@@ -91,17 +97,11 @@
     </div>
   </section>
 
-  <!-- Call to Action Section -->
-  <section class="cta bg-primary text-white text-center py-5">
-    <div class="container">
-      <h2 class="mb-4">Get Started with Shivon AI Today!</h2>
-      <a href="/contact" class="btn btn-light btn-lg fw-bold">Contact Us</a>
-    </div>
-  </section>
+  
+  @@include('includes/contact-cta.html')
 
-    <!-- Include the header from header.html -->
-    @@include('includes/footer.html')
-
-    @@include('includes/footScripts.html')
+  <!-- Include the header from header.html -->
+  @@include('includes/footer.html')
+  @@include('includes/footScripts.html')
 </body>
 </html>
